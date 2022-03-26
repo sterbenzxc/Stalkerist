@@ -20,11 +20,8 @@ followids = [1231611929082368001,2309701,1435957188690726915,1233575893647257602
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 api = tweepy.API(auth,wait_on_rate_limit=True)
-tweet = tweepy.Client(consumer_key=CONSUMER_KEY,
-                       consumer_secret=CONSUMER_SECRET,
-                       access_token=ACCESS_TOKEN,
-                       access_token_secret=ACCESS_TOKEN_SECRET,
-                       bearer_token=BEARER_TOKEN)
+tweet = tweepy.Client(consumer_key=CONSUMER_KEY,consumer_secret=CONSUMER_SECRET,access_token=ACCESS_TOKEN,access_token_secret=ACCESS_TOKEN_SE
+CRET,bearer_token=BEARER_TOKEN)
                        
 user = tweet.get_user(username = 'CryptoSeersph')
 
